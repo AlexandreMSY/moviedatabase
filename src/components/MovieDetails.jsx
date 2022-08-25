@@ -7,9 +7,9 @@ import OtherDetails from "./OtherDetails";
 
 export default function MovieDetails(props){
     return(
-        <div className="container">
+        <div className="container-md">
             <div className="row">
-                <div className="col-md-3 m-2">
+                <div className="col-md-3 mt-2">
                     <aside className="border rounded-2 text-center d-flex flex-column justify-content-center align-items-center bg-dark text-light p-4"
                     style={{
                         background: 'linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(45,45,45,1) 35%, rgba(74,74,74,1) 100%)',
@@ -37,7 +37,7 @@ export default function MovieDetails(props){
                     </aside>
                 </div>
 
-                <div className="col-md-8 m-2">
+                <div className="col-md-8 mt-2">
                     <div className="bg-dark text-light d-flex flex-column justify-content-center align-items-center p-4 border rounded-2"
                     style={{background: 'linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(45,45,45,1) 35%, rgba(74,74,74,1) 100%)'}}>
                         <article>

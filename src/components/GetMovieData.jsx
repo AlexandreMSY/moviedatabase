@@ -39,10 +39,17 @@ export default class GetMovieData extends React.Component{
 
     render(){
         return(
-            <div>
-                <input type='text' name='title' placeholder ="Title" ref={title}/>
-                <input type='number' name='year' placeholder ="Year" ref={year}/>
-                <button onClick={this.handleClick}>Click</button>
+        <div className="d-flex flex-column justify-content-center">
+            <nav className="bg-dark">
+                <div className="d-flex justify-content-center p-3">
+                    <input type='text' className="form-control mx-3 bg-dark text-light" name='title' placeholder ="Title" ref={title}
+                    style={{width: '30%'}}/>
+                    <input type='number' className="form-control mx-3 bg-dark text-light" name='year' placeholder ="Year" ref={year}
+                    style={{width: '30%'}}/>
+                    <button onClick={this.handleClick} className="btn btn-success">Click</button>
+                </div>
+            </nav>
+            <div className="container-fluid mt-2">
                 <MovieDetails 
                 posterLink={this.state.dataApi.Poster}
                 movieTitle={this.state.dataApi.Title}
@@ -63,6 +70,7 @@ export default class GetMovieData extends React.Component{
                 type={this.state.dataApi.Type}
                 />
             </div>
+        </div>
         )
     }
 }
